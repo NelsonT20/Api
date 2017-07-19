@@ -1,27 +1,25 @@
-'use strict';
-
 module.exports = function (Books) {
     const fun = Books;
     const pro = [{}];
-    Books.remoteMethod('nombre', {
+    Books.remoteMethod('Name', {
         accepts: { arg: 'name', type: 'string' },
         returns: { arg: 'name', type: 'Object' },
-        http: { path: '/name', type: 'string', verb: 'get' }
+        http: { path: '/SearchByName', type: 'string', verb: 'get' }
     });
 
-    Books.remoteMethod('mapeo', {
+    Books.remoteMethod('mapping', {
         returns: { arg: 'generos', type: 'Object' },
-        http: { path: '/mapeo', type: 'string', verb: 'get' },
-        description: "busqueda general que solo muestra los generos"
+        http: { path: '/mapping', type: 'string', verb: 'get' },
+        description: "this is a general searching that only show the genres"
     });
     //method remote searching by name using arrow function
-    Books.nombre = ((name, cb) => {
+    Books.Name = ((name, cb) => {
         Books.findOne({ where: { name: name } }, ((err, book) => {
             cb(null, book);
         }));
     });
     //method remote using mapping 
-    Books.mapeo = ((cb) => {
+    Books.mapping = ((cb) => {
         Books.find({}, ((err, gen) => {
             let gens = gen.map((data) => {
                 return data.generos
