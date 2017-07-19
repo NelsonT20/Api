@@ -1,0 +1,19 @@
+{
+  "ids": {
+    "books": 4,
+    "numbers": 5
+  },
+  "models": {
+    "books": {
+      "1": "{\"name\":\"harry potter\",\"generos\":[{\"genero1\":\"fantasia\",\"genero2\":\"aventura\"}],\"year\":\"2000-07-16T23:05:15.307Z\",\"id\":1}",
+      "2": "{\"name\":\"hobbit\",\"generos\":[{\"genero1\":\"aventura\"}],\"year\":\"1940-07-16T23:18:57.890Z\",\"id\":2}",
+      "3": "{\"name\":\"silmarilion\",\"generos\":[{\"genero1\":\"fantasia\",\"genero2\":\"aventura\"}],\"year\":\"1940-07-16T23:18:57.890Z\",\"id\":3}"
+    },
+    "numbers": {
+      "1": "{\"numeros\":1,\"id\":1}",
+      "2": "{\"numeros\":3,\"id\":2}",
+      "3": "{\"numeros\":2,\"id\":3}",
+      "4": "{\"numeros\":4,\"id\":4}"
+    }
+  }
+}

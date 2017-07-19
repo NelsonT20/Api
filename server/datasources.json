@@ -1,0 +1,8 @@
+{
+  "prueba": {
+    "name": "prueba",
+    "localStorage": "",
+    "file": "mydata.json",
+    "connector": "memory"
+  }
+}
